@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Inconsolata Nerd Font Regular, sans-serif;
+            margin: 5;
+            padding: 5;
+            color: #cadfff;
+            background-color: #00213b;
+        }
+        h1 {
+            text-align: left;
+            margin-top: 50px;
+        }
+        p {
+            text-align: right;
+            margin-top: 20px;
+        }
+    </style>
+    <title>jtabox@github.io</title>
+</head>
+<body>
+    <h1>My First Heading</h1>
+    <p>idk how this works</p>
+    <input type="button" value="! DO NOT CLICK THIS !" onclick="msg()">
+    <script>
+        function msg() {
+            btns = document.getElementsByTagName("input");
+            btns[0].value = "I TOLD YOU NOT TO CLICK IT!";
+        }
+    </script>
+</body>
+</html>
