@@ -19,16 +19,37 @@
             text-align: right;
             margin-top: 20px;
         }
+        input {
+            margin-top: 20px;
+            background-color: #ff0000;
+            color: #fdfff2;
+            border: 2px solid #ffff00;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
     </style>
     <title>jtabox@github.io</title>
 </head>
 <body>
     <h1>My First Heading</h1>
     <p>idk how this works</p>
-    <input type="button" value="! DO NOT CLICK THIS !" onclick="msg()">
+    <input type="button" value="! DO NOT CLICK THIS !" onclick="msg()" onmouseover="mover()">
     <script>
+        function mover() {
+            document.body.innerHTML = "";
+            document.body.style.backgroundColor = "#000000";
+            document.body.style.color = "#ffffff";
+            document.body.style.fontFamily = "Inconsolata Nerd Font Regular, sans-serif";
+            document.body.style.fontSize = "20px";
+            document.body.style.textAlign = "center";
+            document.body.innerHTML = "<h1>NOW YOU GOTTA RELOAD</h1>";
+        }
         function msg() {
-            btns = document.getElementsByTagName("input");
+            let btns = document.getElementsByTagName("input");
             btns[0].value = "I TOLD YOU NOT TO CLICK IT!";
         }
     </script>
